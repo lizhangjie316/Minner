@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1214</width>
+    <height>675</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#555555
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="label_20">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+    border:none;
+    font-size:16px;
+    font-weight:400;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 #777777,stop:1 #000000);
+    color:white;
+  }</string>
+     </property>
+     <property name="text">
+      <string>  分割统计</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>740</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#444444</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    border-radius: 3px;
+   color:white;
+    background:#444444;
+}</string>
+        </property>
+        <property name="text">
+         <string>统计设置</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>250</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 85, 85);</string>
+        </property>
+        <widget class="QWidget" name="widget_3" native="true">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>20</y>
+           <width>381</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>10</y>
+            <width>72</width>
+            <height>15</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    border-radius: 3px;
+   color:white;
+}</string>
+          </property>
+          <property name="text">
+           <string>摄像头ID:</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>10</y>
+            <width>161</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#444444;</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="widget_4" native="true">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>70</y>
+           <width>381</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>10</y>
+            <width>91</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    border-radius: 3px;
+   color:white;
+}</string>
+          </property>
+          <property name="text">
+           <string>摄像头点位:</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox_2">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>10</y>
+            <width>161</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#444444;</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="pushButton">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>180</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+           border:none;
+          background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(96,157,200),stop:1 rgb(0,94,150));
+          font-size:15px;
+            color:white;
+            width:120px;
+            height:40px;
+            text-align:center;
+            border-radius:5px;
+        }
+QPushButton:hover{
+        	color:#0caaff
+}
+QPushButton:pressed{
+background-color: rgb(50, 88, 138)
+}
+QPushButton:disabled{
+color:rgb(172, 172, 172);
+background-color:rgb(93, 93, 93)
+}</string>
+         </property>
+         <property name="text">
+          <string>统计</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1" rowspan="2">
+    <widget class="QWidget" name="widget_11" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>720</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>740</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#444444</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_8">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_63">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    border-radius: 3px;
+   color:white;
+    background:#444444;
+}</string>
+        </property>
+        <property name="text">
+         <string>统计设置</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QWidget" name="widget_15" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>480</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget{
+background-color:#555555
+}
+QPushButton{
+           border:none;
+          background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 rgb(96,157,200),stop:1 rgb(0,94,150));
+          font-size:15px;
+            color:white;
+            width:120px;
+            height:40px;
+            text-align:center;
+            border-radius:5px;
+        }
+QPushButton:hover{
+        	color:#0caaff
+}
+QPushButton:pressed{
+background-color: rgb(50, 88, 138)
+}
+QPushButton:disabled{
+color:rgb(172, 172, 172);
+background-color:rgb(93, 93, 93)
+}
+
+QLable{
+color:white;
+background:#222222;
+}</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout"/>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QWidget" name="widget_5" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color:#444444</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="styleSheet">
+         <string notr="true">QTabWidget{
+background-color:#666666;
+}
+QTabWidget::pane{
+
+border-top: 1px solid;
+
+border-color: #333333;
+
+}
+
+QTabBar::tab {
+min-width:80px;
+min-height:30px;
+color: white;
+background:#666666;
+
+border: 0px solid;
+
+}
+
+QTabBar::tab:selected{
+min-width:85px;
+min-height:30px;
+color: white;
+background:#009DE2;
+border: 0px solid;
+border-bottom: 2px solid;
+}
+</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>1分钟</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QWidget" name="widget_6" native="true">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(85, 85, 85);</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_5">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+   color:white;
+}</string>
+               </property>
+               <property name="text">
+                <string>(1)20+:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLabel" name="label_14">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+   color:white;
+}</string>
+               </property>
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLabel" name="label_12">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+   color:white;
+}</string>
+               </property>
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_8">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+   color:white;
+}</string>
+               </property>
+               <property name="text">
+                <string>(4)2+:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLabel" name="label_13">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+   color:white;
+}</string>
+               </property>
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="label_11">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+   color:white;
+}</string>
+               </property>
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_7">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+   color:white;
+}</string>
+               </property>
+               <property name="text">
+                <string>(3)5+:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="label_10">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+   color:white;
+}</string>
+               </property>
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_4">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+   color:white;
+}</string>
+               </property>
+               <property name="text">
+                <string>平均矿石尺寸占比：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_6">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+   color:white;
+}</string>
+               </property>
+               <property name="text">
+                <string>(2)10+:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_9">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+   color:white;
+}</string>
+               </property>
+               <property name="text">
+                <string>(5)平均尺寸：</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>5分钟</string>
+         </attribute>
+         <widget class="QWidget" name="widget_7" native="true">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>431</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(85, 85, 85);</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_15">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>平均矿石尺寸占比：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_16">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(1)20+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_17">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_18">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(2)10+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_19">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_21">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(3)5+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_22">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_23">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(4)2+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLabel" name="label_24">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_25">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(5)平均尺寸：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="label_26">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>10分钟</string>
+         </attribute>
+         <widget class="QWidget" name="widget_8" native="true">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>431</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(85, 85, 85);</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_27">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>平均矿石尺寸占比：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_28">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(1)20+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_29">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_30">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(2)10+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_31">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_32">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(3)5+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_33">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_34">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(4)2+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLabel" name="label_35">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_36">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(5)平均尺寸：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="label_37">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_6">
+         <attribute name="title">
+          <string>15分钟</string>
+         </attribute>
+         <widget class="QWidget" name="widget_9" native="true">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>431</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(85, 85, 85);</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_38">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>平均矿石尺寸占比：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_39">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(1)20+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_40">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_41">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(2)10+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_42">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_43">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(3)5+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_44">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_45">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(4)2+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLabel" name="label_46">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_47">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(5)平均尺寸：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="label_48">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_7">
+         <attribute name="title">
+          <string>30分钟</string>
+         </attribute>
+         <widget class="QWidget" name="widget_10" native="true">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>431</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(85, 85, 85);</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_49">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>平均矿石尺寸占比：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_50">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(1)20+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_51">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_52">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(2)10+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_53">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_54">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(3)5+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_55">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_56">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(4)2+:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLabel" name="label_57">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_58">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>(5)平均尺寸：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="label_59">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+   color:white;
+}</string>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
