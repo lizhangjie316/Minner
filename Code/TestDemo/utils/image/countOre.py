@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 import pywt
 import sys
 from PyQt5.QtSql import *
-from ui import Ui_MainWindow
-import ui.Ui_MainWindow as UI
-# import Ui_MainWindow as UI
+# from ui import Ui_MainWindow
+# import ui.Ui_MainWindow as UI
+import Ui_MainWindow as UI
 # from Camera import Camera
 import time
 # from mkdir import mkdir
@@ -149,6 +149,9 @@ def countOre(imgPath):
 	# cv2.waitKey()
 	# cv2.destroyAllWindows()  # important part!
 
+'''
+统计信息，并规整到Info类中
+'''
 def countInfo(filePath):
 	# save_path = filePath + "./../count/"
 	# mkdir(save_path)
@@ -162,16 +165,86 @@ def countInfo(filePath):
 
 
 if __name__ == "__main__":
-	# imgPath = "E:/Project/Minner/data/1_predict.png"
-	# print(sys.argv[0])
-	# imgPath = "./data/1_predict.png"
-	info = Info()
-	# countOre(imgPath)
-	# print(len(Info.count_dict['20']))
+	print("================================")
+	'''
+	1. 之前的测试
+	'''
+	# # imgPath = "E:/Project/Minner/data/1_predict.png"
+	# # print(sys.argv[0])
+	# # imgPath = "./data/1_predict.png"
+	# info = Info()
+	# # countOre(imgPath)
+	# # print(len(Info.count_dict['20']))
+	#
+	# countInfo("C:/Users\Keen\Desktop\Project\Github\Minner\Code\TestDemo\data\processing\predict")
+	# print("----------------------------------------------------------------")
+	# print(len(Info.count_dict["20"]),len(Info.count_dict["10"]),len(Info.count_dict["5"]),len(Info.count_dict["2"]))   # 69 101 215 492
+	# print(Info.count_dict["count"]) # 877
+	# Info.calcPercent() # 7.87 11.52 24.52 56.09    和为100
+	# # print("hello")
+	'''
+	2. 构建单张图片的分割结果，并保存到数据库中去
+	'''
+	# info = Info()
+	# imgPath = "C:/Users\Keen\Desktop\Project\Github\Minner\Code\TestDemo\data\processing\predict/1599029866.png"
+	# img = cv2.imread(imgPath)
+	#
+	# """转化为灰度图像"""
+	# gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+	# cv2.imshow("gray", gray)
 
-	countInfo("C:\\Users\\keen\\Desktop\\predict\\")
-	print("----------------------------------------------------------------")
-	print(len(Info.count_dict["20"]),len(Info.count_dict["10"]),len(Info.count_dict["5"]),len(Info.count_dict["2"]))   # 69 101 215 492
-	print(Info.count_dict["count"]) # 877
-	Info.calcPercent() # 7.87 11.52 24.52 56.09    和为100
-	# print("hello")
+	# """转化为二值图像"""
+	# dst1 = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 251, 1)
+	# # cv2.imshow("black&white", dst1)
+	# # cv2.waitKey(0)
+	# """膨胀用于排除小型黑洞"""
+	# kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))  # (此矩阵有关于黑点、噪点的去除)
+	# dst = cv2.bitwise_not(dst1)  # 取反
+	# # dilateImg = cv2.dilate(dst, kernel)
+	# dst = cv2.erode(dst, kernel)
+	# dst = cv2.bitwise_not(dst)
+	# # cv2.imshow("erodImg&wdilateImg", dst)
+	#
+	#
+	# """计算数目"""
+	# # dilateImg = 255 - dst #黑白转换
+	# contours, hierarchy = cv2.findContours(dst, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)  # 轮廓检测函数
+	# cv2.drawContours(dst, contours, -1, (100, 0, 0), 2)  # 绘制轮廓
+	# cv2.imshow("calcuate", dst)
+	# cv2.waitKey(0)
+	#
+	# count = 0  # 单张图片的矿石总数
+	# areas_sum_real = 0  # 记录单张图片上的矿石总真实面积
+	#
+	# # 遍历找到的所有矿石
+	# for cont in contours:
+	# 	ares = cv2.contourArea(cont)  # 计算包围形状的像素面积
+	# 	# 真实直径
+	# 	realInch = round((ares ** 0.5) * Info.cm_per_pixels,2)
+	# 	# 单个闭合区域的真实面积
+	# 	real_ares = round(realInch ** 2,2)
+	# 	# 计数
+	# 	if realInch >= 20:
+	# 		Info.count_dict["20"].append(realInch)
+	# 	elif realInch >= 10:
+	# 		Info.count_dict["10"].append(realInch)
+	# 	elif realInch >= 5:
+	# 		Info.count_dict["5"].append(realInch)
+	# 	elif realInch >= 2:
+	# 		Info.count_dict["2"].append(realInch)
+	# 	else:
+	# 		continue
+	#
+	# 	count += 1
+	# 	areas_sum_real += real_ares
+	# 	print("{}-blob:{}".format(count, real_ares))  # 打印出每个矿石的真实面积
+	#
+	# Info.count_dict["count"] += count
+	# Info.count_dict["area_sum_real"] += areas_sum_real
+	# # avg:单张图片的真实平均面积
+	# avg = round(areas_sum_real/count,2)
+	# Info.areas_avg_real = round(Info.count_dict["area_sum_real"] / Info.count_dict["count"], 2)
+	#
+	# print("单张图片的矿石平均面积:{}".format(avg))  # 打印出每个矿石的面积
+	# print("单张图片的矿石个数:{}".format(count))
+	# Info.calcPercent()

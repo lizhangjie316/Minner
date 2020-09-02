@@ -59,15 +59,15 @@ class SegModel(QtCore.QObject):
             if not os.listdir(self.ImagePath):
                 time.sleep(1)
                 continue
-            #读取图片并转换格式
+            # 读取图片并转换格式
             num_image = len(os.listdir(self.ImagePath))
             # TODO 此处将png文件转为8位
             png28(self.ImagePath)
             testGene = testGenerator(self.png28_path, num_image)
-            #执行分割
+            # 执行分割
             results = self.model.predict_generator(testGene, num_image,verbose=1)
             saveResult(self.png28_path, results)  # 存在test平级目录  "./../predict/"
-            #统计
+            # 统计
             countInfo(self.predict_path)
             self.finiSignal.emit()
 
