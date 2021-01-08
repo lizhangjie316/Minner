@@ -87,8 +87,11 @@ def png28(filePath):
 
 
 if __name__ == "__main__":
-	filePath = "data/abc"
+	filePath = "C:\\Users\\Keen\\Desktop\\1.png"
 	# jpg2png(filePath)
 	#
 	# png28(filePath+"./../png_test/")
-	myRename(filePath)
+	# myRename(filePath)
+	outdir = "D://"
+	togrey(filePath,outdir)
+
