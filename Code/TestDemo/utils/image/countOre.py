@@ -6,13 +6,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pywt
 import sys
-from PyQt5.QtSql import *
-# from ui import Ui_MainWindow
-# import ui.Ui_MainWindow as UI
-import Ui_MainWindow as UI
-# from Camera import Camera
+
 import time
-# from mkdir import mkdir
 
 
 class Info:
@@ -40,7 +35,6 @@ class Info:
 	def reset(cls):
 		cls.count_dict = {"count":0,"area_sum_real":0,"20":[],"10":[],"5":[],"2":[]}
 		cls.percent_dict = {"p20": 0, "p10": 0, "p5": 0, "p2": 0}
-
 
 
 def countOre(imgPath):

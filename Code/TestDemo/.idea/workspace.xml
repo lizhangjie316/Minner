@@ -1,40 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e5e23926-19a4-49a7-9a14-8a8958dd9724" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/TestDemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/TestDemo1/OnePictureProcess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/TestDemo1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ui_MainWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/processing/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/processing/png8_test/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/processing/predict/1599029866.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/processing/predict/1599030337.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/processing/predict/1599030351.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/processing/predict/1599030410.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/processing/predict/1599030458.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/processing/predict/1599031169.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/SegModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/unet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/file/mkdir.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/image/MatToQImage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/image/countOre.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/image/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/image/jpg2png8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/video/Camera.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/video/VideoDisplay.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/video/loadVedio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minner0827/model/SegModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Minner0827/model/SegModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Minner0827/utils/image/countOre.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Minner0827/utils/image/countOre.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/TestDemo1/OnePictureProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/TestDemo1/OnePictureProcess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ui_MainWindow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/image/countOre.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/image/countOre.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/image/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/image/data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="JupyterTrust" id="bfe463a9-24ce-4f97-a703-a9c6dc64e5c1" />
   <component name="ProjectId" id="1gw2wvZJJWMu5ZPPKApdhd3RC4v" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -66,7 +59,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -148,12 +141,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.jpg2png8" />
         <item itemvalue="Python.countOre" />
         <item itemvalue="Python.SegModel" />
-        <item itemvalue="Python.jpg2png8" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -166,37 +160,48 @@
       <updated>1599011575725</updated>
       <workItem from="1599011577056" duration="18326000" />
       <workItem from="1599035031932" duration="552000" />
+      <workItem from="1618658016740" duration="4973000" />
+      <workItem from="1618793533587" duration="5352000" />
+      <workItem from="1618803349159" duration="1563000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="121" key="GridCell.Tab.0.bottom" timestamp="1599035584066">
-      <screen x="1920" y="-4" width="1920" height="1040" />
+    <state x="1740" y="741" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618663043406">
+      <screen x="1080" y="432" width="1858" height="1080" />
     </state>
-    <state width="1877" height="121" key="GridCell.Tab.0.bottom/1920.-4.1920.1040/0.0.1920.1040@1920.-4.1920.1040" timestamp="1599035584066" />
-    <state width="1877" height="121" key="GridCell.Tab.0.center" timestamp="1599035584066">
-      <screen x="1920" y="-4" width="1920" height="1040" />
+    <state x="1740" y="741" key="#com.intellij.fileTypes.FileTypeChooser/1080.432.1858.1080/0.0.1018.1920@1080.432.1858.1080" timestamp="1618663043406" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618658613811">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="121" key="GridCell.Tab.0.center/1920.-4.1920.1040/0.0.1920.1040@1920.-4.1920.1040" timestamp="1599035584066" />
-    <state width="1877" height="121" key="GridCell.Tab.0.left" timestamp="1599035584066">
-      <screen x="1920" y="-4" width="1920" height="1040" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1080.-432.1080.1880@0.0.1920.1040" timestamp="1618658613811" />
+    <state x="1820" y="707" key="FileChooserDialogImpl" timestamp="1618660398486">
+      <screen x="1080" y="432" width="1858" height="1080" />
     </state>
-    <state width="1877" height="121" key="GridCell.Tab.0.left/1920.-4.1920.1040/0.0.1920.1040@1920.-4.1920.1040" timestamp="1599035584066" />
-    <state width="1877" height="121" key="GridCell.Tab.0.right" timestamp="1599035584066">
-      <screen x="1920" y="-4" width="1920" height="1040" />
+    <state x="1820" y="707" key="FileChooserDialogImpl/1080.432.1858.1080/0.0.1018.1920@1080.432.1858.1080" timestamp="1618660398486" />
+    <state x="196" y="162" key="SettingsEditor" timestamp="1618658057261">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="121" key="GridCell.Tab.0.right/1920.-4.1920.1040/0.0.1920.1040@1920.-4.1920.1040" timestamp="1599035584066" />
-    <state x="2381" y="160" key="SettingsEditor" timestamp="1599017314358">
-      <screen x="1920" y="-4" width="1920" height="1040" />
-    </state>
-    <state x="2381" y="160" key="SettingsEditor/1920.-4.1920.1040/0.0.1920.1040@1920.-4.1920.1040" timestamp="1599017314358" />
+    <state x="196" y="162" key="SettingsEditor/0.0.1920.1040/-1080.-432.1080.1880@0.0.1920.1040" timestamp="1618658057261" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TestDemo$jpg2png8.coverage" NAME="jpg2png8 Coverage Results" MODIFIED="1599016540624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils/image" />
     <SUITE FILE_PATH="coverage/TestDemo$countOre.coverage" NAME="countOre Coverage Results" MODIFIED="1599035496032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils/image" />
     <SUITE FILE_PATH="coverage/TestDemo$SegModel.coverage" NAME="SegModel Coverage Results" MODIFIED="1599031163358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/TestDemo$jpg2png8.coverage" NAME="jpg2png8 Coverage Results" MODIFIED="1599016540624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils/image" />
   </component>
 </project>
